@@ -1,61 +1,46 @@
 <div class = "row"></div>
 
-<div class="container container-fluid" >
+        <div class="container container-fluid" >
 
 
-        <div class = " center-align">
-            <div class = "row"></div>
+                <div class = " center-align">
 
-
-           
-
-        <div class="row" infinite-scroll="loadMoreo()" infinite-scroll-distance="0" infinite-scroll-use-document-bottom ="false" style="padding-top:250px;">
-            <center>
                 <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
+
+                <div class="row" infinite-scroll="loadMoreo()" infinite-scroll-distance="0" infinite-scroll-use-document-bottom ="false" style="padding-top:250px;">
+                    <center>
+                        <div class = "row"></div>
+                        <div class = "row"></div>
+                        <div class = "row"></div>
+                        
                 
-        
-                <div class="row  " ng-repeat="shoe in theShoes1 | orderBy: order track by $index ">
-                    <div class="row">
-                    <div class = "col s2"></div>
+                        <div class="row  " ng-repeat="shoe in theShoes1 | orderBy: order track by $index ">
+                            <div class="row">
+                            <div class = "col s2"></div>
 
-                    <div class = "col s6" style="border:2px solid indigo;">
-                    
-                    <p class="pull-left bellefair" id="shopitemtitle" style="font-size:20px;">{{shoe.etc.author_name | uppercase}}|?</p>
-                    <p class="pull-left bellefair" id="shopitemtitle" style="font-size:14px;">{{shoe.etc.name | uppercase}}|?</p>
-                    <p class="pull-left bellefair" id="shopitemtitle" style="font-size:20px;">{{shoe.etc.name | uppercase}}|?</p>
-                    <p class="pull-left bellefair flow-text" id="shopitemtitle" ">{{shoe.etc.description | uppercase}}|?</p>
-                    <p class="pull-left bellefair flow-text" id="shopitemtitle" >{{shoe.etc.caption | uppercase}}|?</p>
-                 
+                            <div class = "col s6" style="border:2px solid indigo;">
+                            
+                            <p class="pull-left bellefair" id="shopitemtitle" style="font-size:20px;">{{shoe.etc.author_name | uppercase}}|?</p>
+                            <p class="pull-left bellefair" id="shopitemtitle" style="font-size:14px;">{{shoe.etc.name | uppercase}}|?</p>
+                            <p class="pull-left bellefair" id="shopitemtitle" style="font-size:20px;">{{shoe.etc.name | uppercase}}|?</p>
+                            <p class="pull-left bellefair flow-text" id="shopitemtitle" ">{{shoe.etc.description | uppercase}}|?</p>
+                            <p class="pull-left bellefair flow-text" id="shopitemtitle" >{{shoe.etc.caption | uppercase}}|?</p>
+                        
+                            <img ng-src = "{{shoe.etc.from.cover.source}}">
 
+                        </div>
 
+                        <div class = "col s2"></div>
 
+                    </div>
 
-                    <img ng-src = "{{shoe.etc.from.cover.source}}">
-
-
-                   <!-- <landing-gallery></landing-gallery>-->
-           
-                </div>
-                <div class = "col s2"></div>
-            </div>
                 </div>
 
             </center>
+            
         </div>
+                
         </div>
-
-
-        <button back-to-top-jquery ng-click="topFunction();" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
 
         <div ng-if="loadingItems &&!feedEmpty" class = "row">
 
@@ -68,17 +53,21 @@
             </div>
 
         </div>
+
         <div ng-if="feedEmpty" class = "row">
 
             <div class = "col s12 grey lighten-5 center-align animated pulse ">
 
-                <p class="animated shake" style="display:inline-block;font-size:25px; padding-bottom:15px;" id="whatsnewtitle"><i class="material-icons" style=" padding-top:50px;font-size:30px;">block</i> NO MORE POSTS...</p>
+                <p class="animated fadeIn" style="display:inline-block;font-size:25px; padding-bottom:15px;" id="whatsnewtitle"><i class="material-icons" style=" padding-top:50px;font-size:30px;">block</i> NO MORE POSTS...</p>
 
             </div>
 
         </div>
+
         <div ng-if="theShoes1.length ===0" class = "row" >
+
             <div class = "col s4"></div>
+
             <div class = "col s4 red lighten-3 center-align animated pulse " style="border-radius:25px;">
 
                 <p class="animated shake" style="font-size:25px; padding-bottom:25px;" id="whatsnewtitle"> There Was A Problem Loading Feed...</p>               
@@ -86,10 +75,11 @@
 
 
             </div>
+
             <div class = "col s4"></div>
 
-
         </div>
+
         <div class = "row"></div>
         <div class = "row"></div>
         <div class = "row"></div>
@@ -97,4 +87,4 @@
         <div class = "row"></div>
         <div class = "row"></div>
 
-    </div>
+</div>

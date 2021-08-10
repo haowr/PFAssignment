@@ -6,7 +6,7 @@
 
 
 
-    app.config(function ($routeProvider, $locationProvider) {//Only providers in config phase... no $rootScope or any other instances...
+    app.config(function ($routeProvider, $locationProvider) {
 
         $routeProvider
         
@@ -14,22 +14,19 @@
 
                 templateUrl: '../views/pages/shop.html',
                 controller: 'shoesCtrl',
-                name: "HOJ | Shop",
+                name: "PF | Assignment",
                 controllerAs: 'shoes'
             })
    
             .otherwise({ redirectTo: '/' });
 
 
-
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
-        }); //now no more # before route
-
+        }); 
 
     });
-
 
 
 }());

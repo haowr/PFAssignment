@@ -6,7 +6,6 @@ var app = angular.module('store',['appRoutes',"postServices","productsController
 																																																  
 app.config(function(){
 
-	//$window.Stripe.setPublishableKey('pk_test_aE3UDuxFXzcslBrNanFIIi6Q');
 
 });
 
