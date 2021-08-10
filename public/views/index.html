@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="store" ng-controller="mainCtrl as main"  ng-cloak>
+
+<head>
+  <title ng-bind="title"> Assessment</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffbbbc" />
+  <link rel="manifest" href="manifest.json">
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript" src="../js/angular.js"></script>
+  <script type="text/javascript" src="../js/angular-route.js"></script>
+  <script type='text/javascript' src='../js/ngInfiniteScroll.js'></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/routes.js"></script>
+
+  <script type="text/javascript" src="../controllers/mainCtrl.js"></script>
+  <script type="text/javascript" src="../controllers/productCtrl.js"></script>
+
+  <script type="text/javascript" src="../services/users/users.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|Spectral" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animate.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/styleindex.css" type="text/css">
+
+</head>
+<!--fixed-top-->
+<div class="navbar-fixed grey">
+  <nav>
+    <div class="nav-wrapper grey">
+      <a href="#!" class="brand-logo">PageFreezer</a>
+ 
+    </div>
+  </nav>
+</div>
+
+<div style="position:fixed;height:100vh; width:300px; padding-left:30px; background-color:transparent;">
+
+  <br>
+  <br>
+  <br>
+  <br> <br>
+  <br>
+  <i class="material-icons" style="font-size:150px;">person</i>
+<h2>PageFreezer</h2>
+<p style="font-size:20px; color:grey;">@PageFreezerSoftwareInc</p>
+<ul style="padding-left:15px;">
+  <div style="background-color:#ddd; border-left:2px solid blue;">
+  <li style="font-size:24px;">Main</li>
+  </div>
+  <li style="font-size:24px;">Main</li>
+  <li style="font-size:24px;">Main</li>
+  <li style="font-size:24px;">Main</li>
+
+
+</ul>
+
+</div>
+<div style="position:fixed;height:100vh; width:300px; right:0; top:20vh; background-color:transparent; z-index:1000;">
+
+  <br>
+  <br>
+  <br>
+  <br> <br>
+  <br>
+
+  <div id="London" class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+  
+  <div id="Paris" class="city" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div id="Tokyo" class="city" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+<p style="font-size:20px;">Published</p>
+<div style="border:1px solid #ddd; width:100%;"></div>
+<p style="font-size:20px;">Post Type</p>
+<div style="border:1px solid #ddd; width:100%;"></div>
+<p style="font-size:20px;">Post ID</p>
+<div style="border:1px solid #ddd; width:100%;"></div>
+<p style="font-size:20px;">Digital Signature</p>
+<div style="border:1px solid #ddd; width:100%;"></div>
+<p style="font-size:20px;">Privacy Settings</p>
+<div style="border:1px solid #ddd; width:100%;"></div>
+<p style="font-size:15px;">Public</p>
+
+
+</div>
+<body>
+
+  <!--<div class = "container theme-showcase">-->
+  <div ng-view></div>
+  
+</body>
+
+</html>
